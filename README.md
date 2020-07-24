@@ -1,1 +1,1 @@
-# Research_GraphQL
+# Practice_GraphQL
