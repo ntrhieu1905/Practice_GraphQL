@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js --exec babel-node --presets babel-preset-env",
+    "start": "nodemon app.js --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,10 +17,10 @@
     "lodash": "^4.17.19"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.1.0",
-    "babel-preset-env": "^1.7.0",
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
     "nodemon": "^2.0.4"
   }
 }
