@@ -7,7 +7,7 @@ import schema from './schema/schema';
 const app = express();
 dotenv.config();
 //Connect mongodb atlas
-const db = `mongodb+srv://${process.env.DATABASE_NAME}:${process.env.DATABASE_PASSWORD}@cluster0.t3x1w.mongodb.net/test`
+const db = `mongodb+srv://${process.env.DATABASE_USER_NAME}:${process.env.DATABASE_PASSWORD}@cluster0.t3x1w.mongodb.net/${process.env.DATABASE_NAME}`
 mongoose.connect(db, {
   useNewUrlParser: true,
   useCreateIndex: true,
