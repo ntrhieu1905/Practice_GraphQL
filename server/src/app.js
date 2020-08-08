@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import { graphqlHTTP } from 'express-graphql';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
@@ -17,6 +18,8 @@ mongoose.connect(db, {
 mongoose.connection.once('open', () => {
   console.log('Connected to database');
 });
+
+app.use(cors());
 
 app.use('/graphql', graphqlHTTP({
   schema,
